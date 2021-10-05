@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+
+	{% block content %}
+<center>
+  <table class="table align-middle container">
+  <thead>
+    <tr>
+      <th scope="col">Algorithm</th>
+      <th scope="col">Prediction</th>
+      <th scope="col">Test Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Logistic Regression</th>
+      <td>{{lr}}</td>
+      <td>85.25 %</td>
+      <td>
+        <button type="button" class="btn btn-danger btn-sm px-3">
+          <i class="fas fa-heart"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">K-Nearest Neighbours</th>
+      <td>{{knn}}</td>
+      <td>86.89 %</td>
+      <td>
+        <button type="button" class="btn btn-danger btn-sm px-3">
+          <i class="fas fa-heart"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Support Vector machine</th>
+      <td>{{svm}}</td>
+      <td>88.52 %</td>
+      <td>
+        <button type="button" class="btn btn-danger btn-sm px-3">
+          <i class="fas fa-heart"></i>
+        </button>
+      </td>
+    </tr>
+	    <tr>
+      <th scope="row">Decision Tree</th>
+      <td>{{dt}}</td>
+      <td>83.61 %</td>
+      <td>
+        <button type="button" class="btn btn-danger btn-sm px-3">
+          <i class="fas fa-heart"></i>
+        </button>
+      </td>
+    </tr>
+	    <tr>
+      <th scope="row"> Random Forest</th>
+      <td>{{rf}}</td>
+      <td>85.25%</td>
+      <td>
+        <button type="button" class="btn btn-danger btn-sm px-3">
+          <i class="fas fa-heart"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--
+  <div class="container mt-3">
+
+   				 {% for message in messages %}
+
+	   				 	<div class=" alert alert-{{message.level_tag}}" role="alert">
+	   				 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						    	<span aria-hidden="true">&times;</span>
+						 	 </button>
+						  <h2 class="bg-faded font-weight-bold">{{message}}</h2>
+						</div>
+   				 {% endfor %}
+   				
+		</div>
+-->
+</center>
+{% endblock %}
